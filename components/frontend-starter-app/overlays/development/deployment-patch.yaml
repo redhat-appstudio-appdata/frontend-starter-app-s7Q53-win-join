@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-starter-app
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/mmarosi123-tenant/frontend-starter-app/frontend-starter-app@sha256:136b34abc1d7fde4b9979a836eab10a49bebc9f2a79395fa73efedd8bc8b0e20
+        name: my-nodejs
+        resources: {}
+status: {}
